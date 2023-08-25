@@ -1,0 +1,21 @@
+{%extends "layout.html"%}
+
+{%block content%}
+<div class="principal">
+    <h2>La frase escrita es:</h2>
+    <h3>{{value}}</h3>
+
+    <form action="/result" id="main" method="POST" enctype="multipart/form-data">
+        <div id="imagenes_container">
+            <div id="img1">
+                <p>Opcion 1</p>
+                <img src={{url_for('static',filename='image_0.png')}}>
+            </div>
+            <div id="img2">
+                <p>Opcion 2</p>
+                <img src={{url_for('static',filename='image_1.png')}}>
+            </div>
+        </div>
+    </form>
+</div>
+{%endblock%}

@@ -1,0 +1,18 @@
+{%extends "layout.html"%}
+
+{%block content%}
+<div class="principal">
+  <div id="formulario">
+      <h1>Bienvenido</h1>
+      <p>Por favor, escriba lo que quiere dibujar</p>
+      <p id="mini">Para una mejor experiencia, colocar la frase dibujo animado al final.
+        <br>Ej: Gato volador dibujo animado
+      </p>
+      <form action="/uploader" method="POST" name="upload_image" type="POST" enctype="multipart/form-data">
+        <input type="text" name="text-image">
+        <br><br>
+        <input type="submit" name="upload" value="Dibujar">
+      </form>
+    </div>
+  </div>
+{%endblock%}

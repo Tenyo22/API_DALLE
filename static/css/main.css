@@ -1,0 +1,62 @@
+body{
+    background: #ef32d9;
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#formulario{
+    /* background: red; */
+    text-align: center;
+}
+
+h1{
+    font-family: 'Times New Roman', cursive;
+}
+
+p{
+    font-size: 1.6em;
+}
+
+#mini{
+    font-size: .8em;
+}
+
+input[name="text-image"]{
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 30em;
+}
+
+input[name="upload"]{
+    font-size: 20px;
+    font-family: Verdana, Helvetica;
+    font-weight: bold;
+    color: white;
+    background: #008CBA;
+    width: 100px;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+#imagenes_container{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    text-align: center;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px){
+    #imagenes_container{
+        /* background: red; */
+        width: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    input[name="text-image"]{
+        width: 18em;
+    }
+}
